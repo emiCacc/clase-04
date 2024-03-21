@@ -1,2 +1,24 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
+//@import "primeng/resources/primeng.css";
+
+.btn-custom{
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+.btn-custom:hover{
+    cursor: pointer;
+}
+
+.btn-selected {
+    background-color: gray;
+}
+ 
+li {
+list-style-type: none;
+}
