@@ -7,8 +7,8 @@
     <body class="text-white-alpha-90">
         <div class="grid _housesCointaner text-sm">
             <!-- Gryffindor -->
-            <div *ngIf="hasGryffindor" class="hasGryffindor text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
-                <h1 class="text-xl text-center">Alumnos Gryffindor</h1>
+            <div class="hasGryffindor text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
+                <h1 class="text-xl text-center">{{ translationService.translate('alumnosGryffindor') }}</h1>
                 <ng-container *ngFor="let alumno of alumnosGryffindor; let i = index">
                     <span class="text-center">
                         <p>{{ alumno }}
@@ -25,8 +25,8 @@
                 </ng-container>
             </div>
             <!-- Slytherin -->
-            <div *ngIf="hasSlytherin" class="hasSlytherin text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
-                <h1 class="text-xl text-center">Alumnos Slytherin</h1> 
+            <div class="hasSlytherin text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
+                <h1 class="text-xl text-center">{{ translationService.translate('alumnosSlytherin') }}</h1> 
                 <ng-container *ngFor="let alumno of alumnosSlytherin; let i = index">
                     <span class="text-center">
                         <p>{{ alumno }} 
@@ -43,8 +43,8 @@
                 </ng-container>
             </div>
             <!-- Hufflepuff -->
-            <div *ngIf="hasHufflepuff" class="hasHufflepuff text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
-                <h1 class="text-xl text-center">Alumnos Hufflepuff</h1> 
+            <div class="hasHufflepuff text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
+                <h1 class="text-xl text-center">{{ translationService.translate('alumnosHufflepuff') }}</h1> 
                 <ng-container *ngFor="let alumno of alumnosHufflepuff; let i = index">
                     <span class="text-center">
                         <p>{{ alumno }}
@@ -61,8 +61,8 @@
                 </ng-container>
             </div>
             <!-- Ravenclaw -->
-            <div *ngIf="hasRavenclaw" class="hasRavenclaw text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
-                <h1 class="text-xl text-center">Alumnos Ravenclaw</h1> 
+            <div class="hasRavenclaw text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
+                <h1 class="text-xl text-center">{{ translationService.translate('alumnosRavenclaw') }}</h1> 
                 <ng-container *ngFor="let alumno of alumnosRavenclaw; let i = index">
                     <span class="text-center">
                         <p>{{ alumno }}

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TranslationService } from 'src/app/services/translation.service';
 
 @Component({
   selector: 'app-alumnos',
@@ -15,6 +16,22 @@ export class AlumnosComponent {
   @Input() criaturas: boolean = false;
   @Input() aritmancia: boolean = false;
   @Input() adivinacion: boolean = false;
+
+  gryffindor: any = {};
+  translationsLoaded: boolean = false;
+
+  constructor(public translationService: TranslationService){}
+
+  ngOnInit() {
+    this.loadTranslations();
+  }
+
+  loadTranslations() {
+    this.translationService.loadTranslations('en').subscribe((translations) => {
+      this.translationService.setTranslations(translations);
+      this.translationsLoaded = true;
+    });
+  }
 
   /* GRYFFINDOR */
   /* Alumnos */
@@ -464,22 +481,5 @@ export class AlumnosComponent {
       '7 - Aprobo',
       'No cursa'
     ];
-
-    hasGryffindor(){
-      
-    }
     
-    hasSlytherin(){
-
-    }
-    
-    hasHufflepuff(){
-
-    }
-    
-    hasRavenclaw(){
-
-    }
-
-
 }

@@ -12,6 +12,9 @@ import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LobbyComponent } from './components/lobby/lobby.component';
 import { NotaConColorPipe } from './pipes/nota-con-color.pipe';
+import { TranslatePipe } from './pipes/translate.pipe';
+import { TranslationService } from './services/translation.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { NotaConColorPipe } from './pipes/nota-con-color.pipe';
     AlumnosComponent,
     HeaderComponent,
     LobbyComponent,
-    NotaConColorPipe    
+    NotaConColorPipe,
+    TranslatePipe    
   ],
   imports: [
     BrowserModule,
@@ -29,8 +33,9 @@ import { NotaConColorPipe } from './pipes/nota-con-color.pipe';
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [TranslationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

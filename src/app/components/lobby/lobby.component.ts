@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslationService } from 'src/app/services/translation.service';
 
 @Component({
   selector: 'app-lobby',
@@ -24,7 +25,7 @@ export class LobbyComponent {
     { label: 'Materias opcionales', value: 'opcionales' }
   ];
 
-  constructor() { }
+  constructor(public translationService: TranslationService) { }
 
   onDropdownChange(event: any) {
     this.materiaSeleccionada = event.value;
