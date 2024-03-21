@@ -1,5 +1,6 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
-//@import "primeng/resources/primeng.css";
+@import "primeng/resources/primeng.css";
+
 
 body{
     background-image: url("../src/assets/img/background.jpg");
@@ -26,4 +27,14 @@ body{
  
 li {
 list-style-type: none;
+}
+
+@font-face {
+    font-family: 'HARRYP__';
+    src: url('../src/assets/fonts/HARRYP__.TTF') format('woff2'), 
+         url('../src/assets/fonts/HARRYP__.TTF') format('woff');    
+}
+
+.font-harry{
+    font-family: 'HARRYP__', sans-serif;
 }

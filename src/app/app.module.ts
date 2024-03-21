@@ -15,6 +15,7 @@ import { NotaConColorPipe } from './pipes/nota-con-color.pipe';
 import { TranslatePipe } from './pipes/translate.pipe';
 import { TranslationService } from './services/translation.service';
 import { HttpClientModule } from '@angular/common/http';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    TooltipModule
   ],
   providers: [TranslationService],
   bootstrap: [AppComponent]
