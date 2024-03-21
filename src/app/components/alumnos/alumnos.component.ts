@@ -18,17 +18,18 @@ export class AlumnosComponent {
 
   /* GRIFFINDOR */
   /* Alumnos */
-  alumnosGriffindor = [
-    'Harry Potter',
-    'Hermione Granger',
-    'Ron Weasley',
-    'Neville Longbottom',
-    'Ginny Weasley',
-    'Fred Weasley',
-    'George Weasley',
-    'Percy Weasley',
-    'Dean Thomas',
-    'Seamus Finnigan'];
+    alumnosGriffindor = [
+      'Harry Potter',
+      'Hermione Granger',
+      'Ron Weasley',
+      'Neville Longbottom',
+      'Ginny Weasley',
+      'Fred Weasley',
+      'George Weasley',
+      'Percy Weasley',
+      'Dean Thomas',
+      'Seamus Finnigan'
+    ];
   /* Materias obligatorias */
     notasPocionesGriffindor = [
       '6 - Aprobo',
@@ -78,7 +79,6 @@ export class AlumnosComponent {
       '10 - Aprobo',
       '6 - Aprobo'
     ];
-
   /* Materias opcionales */
     notasQuidditchGriffindor = [
       '10 - Aprobo',
@@ -130,18 +130,18 @@ export class AlumnosComponent {
     ];
 
   /* SLYTHERIN */
-  alumnosSlytherin = [
-    'Draco Malfoy',
-    'Vincent Crabbe',
-    'Gregory Goyle',
-    'Pansy Parkinson',
-    'Blaise Zabini',
-    'Millicent Bulstrode',
-    'Theodore Nott',
-    'Daphne Greengrass',
-    'Tracey Davis',
-    'Marcus Flint'];
-
+    alumnosSlytherin = [
+      'Draco Malfoy',
+      'Vincent Crabbe',
+      'Gregory Goyle',
+      'Pansy Parkinson',
+      'Blaise Zabini',
+      'Millicent Bulstrode',
+      'Theodore Nott',
+      'Daphne Greengrass',
+      'Tracey Davis',
+      'Marcus Flint'
+    ];
     /* Materias obligatorias */
     notasPocionesSlytherin = [
       '10 - Aprobo',
@@ -191,7 +191,6 @@ export class AlumnosComponent {
       '4 - Desaprobo',
       '9 - Aprobo',
     ];
-
   /* Materias opcionales */
     notasQuidditchSlytherin = [
       '10 - Aprobo',
@@ -241,18 +240,119 @@ export class AlumnosComponent {
       'No cursa',
       'No cursa'
     ];
+   
+  /* HUFFLEPUFF */
+    alumnosHufflepuff = [
+      'Cedric Diggory',
+      'Hannah Abbott',
+      'Ernie Macmillan',
+      'Susan Bones',
+      'Justin Finch-Fletchley',
+      'Zacharias Smith',
+      'Wayne Hopkins',
+      'Megan Jones',
+      'Owen Cauldwell',
+      'Laura Madley'
+    ];
+  /* Materias obligatorias */
+    notasPocionesHufflepuff = [
+      '10 - Aprobo',
+      '7 - Aprobo',
+      '4 - Desaprobo',
+      '3 - Desaprobo',
+      '6 - Aprobo',
+      '7 - Aprobo',
+      '6 - Aprobo',
+      '5 - Desaprobo',
+      '2 - Desaprobo',
+      '9 - Aprobo'
+    ];
+    notasDefensaHufflepuff = [
+      '10 - Aprobo',
+      '10 - Aprobo',
+      '9 - Aprobo',
+      '4 - Desaprobo',
+      '5 - Desaprobo',
+      '1 - Desaprobo',
+      '3 - Desaprobo',
+      '3 - Desaprobo',
+      '9 - Aprobo',
+      '7 - Aprobo'
+    ];
+    notasEncantamientosHufflepuff = [
+      '10 - Aprobo',
+      '9 - Aprobo',
+      '9 - Aprobo',
+      '4 - Desaprobo',
+      '7 - Aprobo',
+      '6 - Aprobo',
+      '4 - Desaprobo',
+      '7 - Aprobo',
+      '5 - Desaprobo',
+      '2 - Desaprobo',
+    ];
+    notasHistoriaHufflepuff = [
+      '7 - Aprobo',
+      '8 - Aprobo',
+      '7 - Aprobo',
+      '10 - Aprobo',
+      '8 - Aprobo',
+      '5 - Desaprobo',
+      '9 - Aprobo',
+      '6 - Aprobo',
+      '4 - Desaprobo',
+      '9 - Aprobo',
+    ];
+  /* Materias opcionales */
+    notasQuidditchHufflepuff = [
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      '9 - Aprobo',
+      'No cursa',
+    ];
+    notasCriaturasHufflepuff = [
+      'No cursa',
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa'
+    ];
+    notasAritmanciaHufflepuff = [
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa'
+    ];
+    notasAdivinacionHufflepuff = [
+      'No cursa',
+      'No cursa',
+      '8 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '8 - Aprobo',
+      '7 - Aprobo'
+    ];
 
-  alumnosHufflepuff = [
-    'Cedric Diggory',
-    'Hannah Abbott',
-    'Ernie Macmillan',
-    'Susan Bones',
-    'Justin Finch-Fletchley',
-    'Zacharias Smith',
-    'Wayne Hopkins',
-    'Megan Jones',
-    'Owen Cauldwell',
-    'Laura Madley'];
 
   alumnosRavenclaw = [
     'Luna Lovegood',
