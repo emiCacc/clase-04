@@ -1,6 +1,11 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 //@import "primeng/resources/primeng.css";
 
+body{
+    background-image: url("../src/assets/img/background.jpg");
+    background-size: cover;    
+}
+
 .btn-custom{
     width: 320px;
     height: 50px;
