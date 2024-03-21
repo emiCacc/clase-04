@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumnos de Gryffindor</title>
 </head>
     <body>
         <div class="grid _housesCointaner text-sm">
@@ -11,68 +10,72 @@
             <div *ngIf="hasGriffindor" class="text-center xl:text-left col-12 xl:col-3">
                 <h1 class="text-xl">Alumnos Griffindor</h1>
                 <ng-container *ngFor="let alumno of alumnosGriffindor; let i = index">
-                    <ul>
-                        <li>{{ alumno }}</li>
-                        <li *ngIf="pociones" [style.color]="(notasPocionesGriffindor[i] | notaConColor).color">{{ notasPocionesGriffindor[i] }}</li>
-                        <li *ngIf="defensa" [style.color]="(notasDefensaGriffindor[i] | notaConColor).color">{{ notasDefensaGriffindor[i] }}</li>
-                        <li *ngIf="encantamientos" [style.color]="(notasEncantamientosGriffindor[i] | notaConColor).color">{{ notasEncantamientosGriffindor[i] }}</li>
-                        <li *ngIf="historia" [style.color]="(notasHistoriaGriffindor[i] | notaConColor).color">{{ notasHistoriaGriffindor[i] }}</li>
-                        <li *ngIf="quidditch" [style.color]="(notasQuidditchGriffindor[i] | notaConColor).color">{{ notasQuidditchGriffindor[i] }}</li>
-                        <li *ngIf="criaturas" [style.color]="(notasCriaturasGriffindor[i] | notaConColor).color">{{ notasCriaturasGriffindor[i] }}</li>
-                        <li *ngIf="aritmancia" [style.color]="(notasAritmanciaGriffindor[i] | notaConColor).color">{{ notasAritmanciaGriffindor[i] }}</li>
-                        <li *ngIf="adivinacion" [style.color]="(notasAdivinacionGriffindor[i] | notaConColor).color">{{ notasAdivinacionGriffindor[i] }}</li>
-                    </ul>
+                    <span>
+                        <p>{{ alumno }}
+                            <span *ngIf="pociones" [style.color]="(notasPocionesGriffindor[i] | notaConColor).color">{{ notasPocionesGriffindor[i] }}</span>
+                            <span *ngIf="defensa" [style.color]="(notasDefensaGriffindor[i] | notaConColor).color">{{ notasDefensaGriffindor[i] }}</span>
+                            <span *ngIf="encantamientos" [style.color]="(notasEncantamientosGriffindor[i] | notaConColor).color">{{ notasEncantamientosGriffindor[i] }}</span>
+                            <span *ngIf="historia" [style.color]="(notasHistoriaGriffindor[i] | notaConColor).color">{{ notasHistoriaGriffindor[i] }}</span>
+                            <span *ngIf="quidditch" [style.color]="(notasQuidditchGriffindor[i] | notaConColor).color">{{ notasQuidditchGriffindor[i] }}</span>
+                            <span *ngIf="criaturas" [style.color]="(notasCriaturasGriffindor[i] | notaConColor).color">{{ notasCriaturasGriffindor[i] }}</span>
+                            <span *ngIf="aritmancia" [style.color]="(notasAritmanciaGriffindor[i] | notaConColor).color">{{ notasAritmanciaGriffindor[i] }}</span>
+                            <span *ngIf="adivinacion" [style.color]="(notasAdivinacionGriffindor[i] | notaConColor).color">{{ notasAdivinacionGriffindor[i] }}</span>
+                        </p>
+                    </span>
                 </ng-container>
             </div>
             <!-- Slytherin -->
             <div *ngIf="hasSlytherin" class="text-center xl:text-left col-12 xl:col-3">
-                <h1 class="text-2xl">Alumnos Slytherin</h1> 
+                <h1 class="text-xl">Alumnos Slytherin</h1> 
                 <ng-container *ngFor="let alumno of alumnosSlytherin; let i = index">
-                    <ul>
-                        <li>{{ alumno }}</li>
-                        <li *ngIf="pociones" [style.color]="(notasPocionesSlytherin[i] | notaConColor).color">{{ notasPocionesSlytherin[i] }}</li>
-                        <li *ngIf="defensa" [style.color]="(notasDefensaSlytherin[i] | notaConColor).color">{{ notasDefensaSlytherin[i] }}</li>
-                        <li *ngIf="encantamientos" [style.color]="(notasEncantamientosSlytherin[i] | notaConColor).color">{{ notasEncantamientosSlytherin[i] }}</li>
-                        <li *ngIf="historia" [style.color]="(notasHistoriaSlytherin[i] | notaConColor).color">{{ notasHistoriaSlytherin[i] }}</li>
-                        <li *ngIf="quidditch" [style.color]="(notasQuidditchSlytherin[i] | notaConColor).color">{{ notasQuidditchSlytherin[i] }}</li>
-                        <li *ngIf="criaturas" [style.color]="(notasCriaturasSlytherin[i] | notaConColor).color">{{ notasCriaturasSlytherin[i] }}</li>
-                        <li *ngIf="aritmancia" [style.color]="(notasAritmanciaSlytherin[i] | notaConColor).color">{{ notasAritmanciaSlytherin[i] }}</li>
-                        <li *ngIf="adivinacion" [style.color]="(notasAdivinacionSlytherin[i] | notaConColor).color">{{ notasAdivinacionSlytherin[i] }}</li>
-                    </ul>
+                    <span>
+                        <p>{{ alumno }} 
+                            <span *ngIf="pociones" [style.color]="(notasPocionesSlytherin[i] | notaConColor).color"> {{ notasPocionesSlytherin[i] }}</span>
+                            <span *ngIf="defensa" [style.color]="(notasDefensaSlytherin[i] | notaConColor).color"> {{ notasDefensaSlytherin[i] }}</span>
+                            <span *ngIf="encantamientos" [style.color]="(notasEncantamientosSlytherin[i] | notaConColor).color"> {{ notasEncantamientosSlytherin[i] }}</span>
+                            <span *ngIf="historia" [style.color]="(notasHistoriaSlytherin[i] | notaConColor).color"> {{ notasHistoriaSlytherin[i] }}</span>
+                            <span *ngIf="quidditch" [style.color]="(notasQuidditchSlytherin[i] | notaConColor).color"> {{ notasQuidditchSlytherin[i] }}</span>
+                            <span *ngIf="criaturas" [style.color]="(notasCriaturasSlytherin[i] | notaConColor).color"> {{ notasCriaturasSlytherin[i] }}</span>
+                            <span *ngIf="aritmancia" [style.color]="(notasAritmanciaSlytherin[i] | notaConColor).color"> {{ notasAritmanciaSlytherin[i] }}</span>
+                            <span *ngIf="adivinacion" [style.color]="(notasAdivinacionSlytherin[i] | notaConColor).color"> {{ notasAdivinacionSlytherin[i] }}</span>
+                        </p>
+                    </span>
                 </ng-container>
             </div>
             <!-- Hufflepuff -->
             <div *ngIf="hasHufflepuff" class="text-center xl:text-left col-12 xl:col-3">
-                <h1 class="text-2xl">Alumnos Hufflepuff</h1> 
+                <h1 class="text-xl">Alumnos Hufflepuff</h1> 
                 <ng-container *ngFor="let alumno of alumnosHufflepuff; let i = index">
-                    <ul>
-                        <li>{{ alumno }}</li>
-                        <li *ngIf="pociones" [style.color]="(notasPocionesHufflepuff[i] | notaConColor).color">{{ notasPocionesHufflepuff[i] }}</li>
-                        <li *ngIf="defensa" [style.color]="(notasDefensaHufflepuff[i] | notaConColor).color">{{ notasDefensaHufflepuff[i] }}</li>
-                        <li *ngIf="encantamientos" [style.color]="(notasEncantamientosHufflepuff[i] | notaConColor).color">{{ notasEncantamientosHufflepuff[i] }}</li>
-                        <li *ngIf="historia" [style.color]="(notasHistoriaHufflepuff[i] | notaConColor).color">{{ notasHistoriaHufflepuff[i] }}</li>
-                        <li *ngIf="quidditch" [style.color]="(notasQuidditchHufflepuff[i] | notaConColor).color">{{ notasQuidditchHufflepuff[i] }}</li>
-                        <li *ngIf="criaturas" [style.color]="(notasCriaturasHufflepuff[i] | notaConColor).color">{{ notasCriaturasHufflepuff[i] }}</li>
-                        <li *ngIf="aritmancia" [style.color]="(notasAritmanciaHufflepuff[i] | notaConColor).color">{{ notasAritmanciaHufflepuff[i] }}</li>
-                        <li *ngIf="adivinacion" [style.color]="(notasAdivinacionHufflepuff[i] | notaConColor).color">{{ notasAdivinacionHufflepuff[i] }}</li>
-                    </ul>      
+                    <span>
+                        <p>{{ alumno }}
+                            <span *ngIf="pociones" [style.color]="(notasPocionesHufflepuff[i] | notaConColor).color">{{ notasPocionesHufflepuff[i] }}</span>
+                            <span *ngIf="defensa" [style.color]="(notasDefensaHufflepuff[i] | notaConColor).color">{{ notasDefensaHufflepuff[i] }}</span>
+                            <span *ngIf="encantamientos" [style.color]="(notasEncantamientosHufflepuff[i] | notaConColor).color">{{ notasEncantamientosHufflepuff[i] }}</span>
+                            <span *ngIf="historia" [style.color]="(notasHistoriaHufflepuff[i] | notaConColor).color">{{ notasHistoriaHufflepuff[i] }}</span>
+                            <span *ngIf="quidditch" [style.color]="(notasQuidditchHufflepuff[i] | notaConColor).color">{{ notasQuidditchHufflepuff[i] }}</span>
+                            <span *ngIf="criaturas" [style.color]="(notasCriaturasHufflepuff[i] | notaConColor).color">{{ notasCriaturasHufflepuff[i] }}</span>
+                            <span *ngIf="aritmancia" [style.color]="(notasAritmanciaHufflepuff[i] | notaConColor).color">{{ notasAritmanciaHufflepuff[i] }}</span>
+                            <span *ngIf="adivinacion" [style.color]="(notasAdivinacionHufflepuff[i] | notaConColor).color">{{ notasAdivinacionHufflepuff[i] }}</span>
+                        </p>
+                    </span>      
                 </ng-container>
             </div>
             <!-- Ravenclaw -->
             <div *ngIf="hasRavenclaw" class="text-center xl:text-left col-12 xl:col-3">
-                <h1 class="text-2xl">Alumnos Ravenclaw</h1> 
+                <h1 class="text-xl">Alumnos Ravenclaw</h1> 
                 <ng-container *ngFor="let alumno of alumnosRavenclaw; let i = index">
-                    <ul>
-                        <li>{{ alumno }}</li>
-                        <li *ngIf="pociones" [style.color]="(notasPocionesRavenclaw[i] | notaConColor).color">{{ notasPocionesRavenclaw[i] }}</li>
-                        <li *ngIf="defensa" [style.color]="(notasDefensaRavenclaw[i] | notaConColor).color">{{ notasDefensaRavenclaw[i] }}</li>
-                        <li *ngIf="encantamientos" [style.color]="(notasEncantamientosRavenclaw[i] | notaConColor).color">{{ notasEncantamientosRavenclaw[i] }}</li>
-                        <li *ngIf="historia" [style.color]="(notasHistoriaRavenclaw[i] | notaConColor).color">{{ notasHistoriaRavenclaw[i] }}</li>
-                        <li *ngIf="quidditch" [style.color]="(notasQuidditchRavenclaw[i] | notaConColor).color">{{ notasQuidditchRavenclaw[i] }}</li>
-                        <li *ngIf="criaturas" [style.color]="(notasCriaturasRavenclaw[i] | notaConColor).color">{{ notasCriaturasRavenclaw[i] }}</li>
-                        <li *ngIf="aritmancia" [style.color]="(notasAritmanciaRavenclaw[i] | notaConColor).color">{{ notasAritmanciaRavenclaw[i] }}</li>
-                        <li *ngIf="adivinacion" [style.color]="(notasAdivinacionRavenclaw[i] | notaConColor).color">{{ notasAdivinacionRavenclaw[i] }}</li>
-                    </ul>         
+                    <span>
+                        <p>{{ alumno }}
+                            <span *ngIf="pociones" [style.color]="(notasPocionesRavenclaw[i] | notaConColor).color">{{ notasPocionesRavenclaw[i] }}</span>
+                            <span *ngIf="defensa" [style.color]="(notasDefensaRavenclaw[i] | notaConColor).color">{{ notasDefensaRavenclaw[i] }}</span>
+                            <span *ngIf="encantamientos" [style.color]="(notasEncantamientosRavenclaw[i] | notaConColor).color">{{ notasEncantamientosRavenclaw[i] }}</span>
+                            <span *ngIf="historia" [style.color]="(notasHistoriaRavenclaw[i] | notaConColor).color">{{ notasHistoriaRavenclaw[i] }}</span>
+                            <span *ngIf="quidditch" [style.color]="(notasQuidditchRavenclaw[i] | notaConColor).color">{{ notasQuidditchRavenclaw[i] }}</span>
+                            <span *ngIf="criaturas" [style.color]="(notasCriaturasRavenclaw[i] | notaConColor).color">{{ notasCriaturasRavenclaw[i] }}</span>
+                            <span *ngIf="aritmancia" [style.color]="(notasAritmanciaRavenclaw[i] | notaConColor).color">{{ notasAritmanciaRavenclaw[i] }}</span>
+                            <span *ngIf="adivinacion" [style.color]="(notasAdivinacionRavenclaw[i] | notaConColor).color">{{ notasAdivinacionRavenclaw[i] }}</span>
+                        </p>
+                    </span>         
                 </ng-container> 
             </div>
         </div>        
