@@ -8,25 +8,25 @@
     <body>
         <div class="grid _housesCointaner">
             <div *ngIf="hasGriffindor" class="text-center xl:text-left col-12 xl:col-3">
-                <h1>Alumnos Griffindor</h1> 
+                <h1 class="text-2xl">Alumnos Griffindor</h1> 
                 <ul>
                     <li *ngFor="let alumno of alumnosGriffindor">{{ alumno }}</li>
                 </ul>            
             </div>
             <div *ngIf="hasSlytherin" class="text-center xl:text-left col-12 xl:col-3">
-                <h1>Alumnos Slytherin</h1> 
+                <h1 class="text-2xl">Alumnos Slytherin</h1> 
                 <ul>
                     <li *ngFor="let alumno of alumnosSlytherin">{{ alumno }}</li>
                 </ul>         
             </div>
             <div *ngIf="hasHufflepuff" class="text-center xl:text-left col-12 xl:col-3">
-                <h1>Alumnos Hufflepuff</h1> 
+                <h1 class="text-2xl">Alumnos Hufflepuff</h1> 
                 <ul>
                     <li *ngFor="let alumno of alumnosHufflepuff">{{ alumno }}</li>
                 </ul>         
             </div>
             <div *ngIf="hasRavenclaw" class="text-center xl:text-left col-12 xl:col-3">
-                <h1>Alumnos Ravenclaw</h1> 
+                <h1 class="text-2xl">Alumnos Ravenclaw</h1> 
                 <ul>
                     <li *ngFor="let alumno of alumnosRavenclaw">{{ alumno }}</li>
                 </ul>         

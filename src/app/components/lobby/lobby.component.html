@@ -10,10 +10,10 @@
 </div>
 
 <!-- Materias obligatorias -->
-<div *ngIf="materiaSeleccionada === 'obligatorias'" class="mt-4">
+<div *ngIf="materiaSeleccionada === 'obligatorias' && materiaSeleccionada !== null" class="mt-4">
     <div class="grid">
-        <span class="col-12 text-center">Materias obligatorias</span>
-        <span class="col-12 text-center">Seleccione una Materia para ver las calificaciones</span>
+        <span class="col-12 text-center">Las materias de esta categoría son obligatorias y los alumnos deberán aprobarlas para pasar al siguiente año.</span>
+        <span class="col-12 text-center">Seleccione una Materia para ver las calificaciones.</span>
         <span class="btn-container col-12 xl:col-3 text-center">
             <button class="btn-custom" (click)="requestPociones()" [ngClass]="{ 'btn-selected': pociones }">Pociones</button>
         </span>
@@ -30,10 +30,10 @@
 </div>
 
 <!-- Materias opcionales -->
-<div *ngIf="materiaSeleccionada === 'opcionales'" class="mt-4">
+<div *ngIf="materiaSeleccionada === 'opcionales' && materiaSeleccionada !== null" class="mt-4">
     <div class="grid">
-        <span class="col-12 text-center">Materias opcionales</span>
-        <span class="col-12 text-center">Seleccione una Materia para ver las calificaciones</span>
+        <span class="col-12 text-center">Las materias de esta categoría son opcionales y los alumnos podrán cursarlas para obtener puntos para sus casas.</span>
+        <span class="col-12 text-center">Seleccione una Materia para ver las calificaciones.</span>
         <span class="btn-container col-12 xl:col-3 text-center">
             <button class="btn-custom" (click)="requestQuidditch()" [ngClass]="{ 'btn-selected': quidditch }">Quidditch</button>
         </span>
