@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  tittle = "Colegio Hogwarts de magia y hechicería"
+  tittle = "COLEGIO HOGWARTS DE MAGIA Y HECHICERÍA";
+  califications = "CALIFICACIONES"
 }
