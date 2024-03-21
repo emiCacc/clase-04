@@ -8,11 +8,23 @@
     <body>
         <div class="grid _housesCointaner">
             <div *ngIf="hasGriffindor" class="text-center xl:text-left col-12 xl:col-3">
-                <h1 class="text-2xl">Alumnos Griffindor</h1> 
-                <ul>
-                    <li *ngFor="let alumno of alumnosGriffindor">{{ alumno }}</li>
-                </ul>            
-            </div>
+                <h1 class="text-xl">Alumnos Griffindor</h1>
+                <ul  class="text-sm"> 
+                  <ng-container *ngFor="let alumno of alumnosGriffindor; let i = index">
+                    <li>{{ alumno }}</li>
+                    <ul>
+                      <li *ngIf="pociones" [style.color]="(notasPocionesGriffindor[i] | notaConColor).color">{{ notasPocionesGriffindor[i] }}</li>
+                      <li *ngIf="defensa" [style.color]="(notasDefensaGriffindor[i] | notaConColor).color">{{ notasDefensaGriffindor[i] }}</li>
+                      <li *ngIf="encantamientos" [style.color]="(notasEncantamientosGriffindor[i] | notaConColor).color">{{ notasEncantamientosGriffindor[i] }}</li>
+                      <li *ngIf="historia" [style.color]="(notasHistoriaGriffindor[i] | notaConColor).color">{{ notasHistoriaGriffindor[i] }}</li>
+                      <li *ngIf="quidditch" [style.color]="(notasQuidditchGriffindor[i] | notaConColor).color">{{ notasQuidditchGriffindor[i] }}</li>
+                      <li *ngIf="criaturas" [style.color]="(notasCriaturasGriffindor[i] | notaConColor).color">{{ notasCriaturasGriffindor[i] }}</li>
+                      <li *ngIf="aritmancia" [style.color]="(notasAritmanciaGriffindor[i] | notaConColor).color">{{ notasAritmanciaGriffindor[i] }}</li>
+                      <li *ngIf="adivinacion" [style.color]="(notasAdivinacionGriffindor[i] | notaConColor).color">{{ notasAdivinacionGriffindor[i] }}</li>
+                    </ul>
+                  </ng-container>
+                </ul>
+              </div>
             <div *ngIf="hasSlytherin" class="text-center xl:text-left col-12 xl:col-3">
                 <h1 class="text-2xl">Alumnos Slytherin</h1> 
                 <ul>

@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LobbyComponent } from './components/lobby/lobby.component';
+import { NotaConColorPipe } from './pipes/nota-con-color.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlumnosComponent,
     HeaderComponent,
-    LobbyComponent    
+    LobbyComponent,
+    NotaConColorPipe    
   ],
   imports: [
     BrowserModule,
