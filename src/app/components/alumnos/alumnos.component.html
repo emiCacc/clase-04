@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos de Gryffindor</title>
+</head>
+    <body>
+        <div class="grid _housesCointaner">
+            <div class="houseContainer col-12 xl:col-3">
+                <h1>Alumnos Griffindor</h1> 
+                <ul>
+                    <li *ngFor="let alumno of alumnosGriffindor">{{ alumno }}</li>
+                </ul>            
+            </div>
+            <div class="houseContainer col-12 xl:col-3">
+                <h1>Alumnos Slytherin</h1> 
+                <ul>
+                    <li *ngFor="let alumno of alumnosSlytherin">{{ alumno }}</li>
+                </ul>         
+            </div>
+            <div class="houseContainer col-12 xl:col-3">
+                <h1>Alumnos Hufflepuff</h1> 
+                <ul>
+                    <li *ngFor="let alumno of alumnosHufflepuff">{{ alumno }}</li>
+                </ul>         
+            </div>
+            <div class="houseContainer col-12 xl:col-3">
+                <h1>Alumnos Ravenclaw</h1> 
+                <ul>
+                    <li *ngFor="let alumno of alumnosRavenclaw">{{ alumno }}</li>
+                </ul>         
+            </div>
+        </div>        
+    </body>
+</html>
