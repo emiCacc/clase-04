@@ -26,41 +26,39 @@
     <p><span *ngIf="materiaSeleccionada === 'opcionales' && materiaSeleccionada !== null" class="col-12 text-center text-white-alpha-90">{{ translationService.translate('materiaOpcional') }}</span></p>
     <p><span *ngIf="materiaSeleccionada" class="col-12 text-center text-white-alpha-90">{{ translationService.translate('clickearMateria') }}</span></p>
 
-
-
-<!-- Materias obligatorias -->
-<div *ngIf="materiaSeleccionada === 'obligatorias' && materiaSeleccionada !== null" class="mt-4">
-    <div class="grid">        
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestPociones()" [ngClass]="{ 'btn-selected': pociones }">{{ translationService.translate('pociones') }}</button>
-        </span>
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestDefensa()" [ngClass]="{ 'btn-selected': defensa }">{{ translationService.translate('defensa') }}</button>
-        </span>
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestEncantamientos()" [ngClass]="{ 'btn-selected': encantamientos }">{{ translationService.translate('encantamientos') }}Encantamientos</button>
-        </span>
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestHistoria()" [ngClass]="{ 'btn-selected': historia }">{{ translationService.translate('historia') }}</button>
-        </span>
+    <!-- Materias obligatorias -->
+    <div *ngIf="materiaSeleccionada === 'obligatorias' && materiaSeleccionada !== null" class="mt-4">
+        <div class="grid">        
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestPociones()" [ngClass]="{ 'btn-selected': pociones }">{{ translationService.translate('pociones') }}</button>
+            </span>
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestDefensa()" [ngClass]="{ 'btn-selected': defensa }">{{ translationService.translate('defensa') }}</button>
+            </span>
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestEncantamientos()" [ngClass]="{ 'btn-selected': encantamientos }">{{ translationService.translate('encantamientos') }}Encantamientos</button>
+            </span>
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestHistoria()" [ngClass]="{ 'btn-selected': historia }">{{ translationService.translate('historia') }}</button>
+            </span>
+        </div>
     </div>
-</div>
 
-<!-- Materias opcionales -->
-<div *ngIf="materiaSeleccionada === 'opcionales' && materiaSeleccionada !== null" class="mt-4">
-    <div class="grid">
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestQuidditch()" [ngClass]="{ 'btn-selected': quidditch }">{{ translationService.translate('quidditch') }}</button>
-        </span>
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestCriaturas()" [ngClass]="{ 'btn-selected': criaturas }">{{ translationService.translate('criaturas') }}</button>
-        </span>
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestAritmancia()" [ngClass]="{ 'btn-selected': aritmancia }">{{ translationService.translate('aritmancia') }}</button>
-        </span>
-        <span class="btn-container col-12 xl:col-3 text-center">
-            <button class="btn-custom" (click)="requestAdivinacion()" [ngClass]="{ 'btn-selected': adivinacion }">{{ translationService.translate('adivinacion') }}</button>
-        </span>
+    <!-- Materias opcionales -->
+    <div *ngIf="materiaSeleccionada === 'opcionales' && materiaSeleccionada !== null" class="mt-4">
+        <div class="grid">
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestQuidditch()" [ngClass]="{ 'btn-selected': quidditch }">{{ translationService.translate('quidditch') }}</button>
+            </span>
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestCriaturas()" [ngClass]="{ 'btn-selected': criaturas }">{{ translationService.translate('criaturas') }}</button>
+            </span>
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestAritmancia()" [ngClass]="{ 'btn-selected': aritmancia }">{{ translationService.translate('aritmancia') }}</button>
+            </span>
+            <span class="btn-container col-12 xl:col-3 text-center">
+                <button class="btn-custom" (click)="requestAdivinacion()" [ngClass]="{ 'btn-selected': adivinacion }">{{ translationService.translate('adivinacion') }}</button>
+            </span>
+        </div>
     </div>
-</div>
 </div>
