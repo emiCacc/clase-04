@@ -5,15 +5,17 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class NotaConColorPipe implements PipeTransform {
 
-  transform(nota: string): { nota: string, color: string } {
+  transform(nota: string): { nota: string, clase: string } {
+    let clase: string;
+
     if (nota === 'No cursa') {
-      return { nota, color: 'gray' };
+      clase = 'no-cursa';
     } else {
       const [valorNota, resultado] = nota.split(' - ');
       const aprobado = parseInt(valorNota) >= 6;
-      const color = aprobado ? 'green' : 'red';
-      return { nota, color };
+      clase = aprobado ? 'aprobo' : 'desaprobo';
     }
-  }
 
+    return { nota, clase };
+  }
 }
