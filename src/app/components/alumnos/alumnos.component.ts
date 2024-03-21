@@ -55,4 +55,21 @@ export class AlumnosComponent {
     'Penelope Clearwater',
     'Mandy Brocklehurst'];
 
+    hasGriffindor(){
+      
+    }
+    
+    hasSlytherin(){
+
+    }
+    
+    hasHufflepuff(){
+
+    }
+    
+    hasRavenclaw(){
+
+    }
+
+
 }

@@ -7,6 +7,8 @@ import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LobbyComponent } from './components/lobby/lobby.component';
 
+import { ButtonModule } from 'primeng/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { LobbyComponent } from './components/lobby/lobby.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

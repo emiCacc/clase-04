@@ -5,6 +5,39 @@ import { Component } from '@angular/core';
   templateUrl: './lobby.component.html',
   styleUrls: ['./lobby.component.scss']
 })
+
 export class LobbyComponent {
+
+  requestPociones(){    
+
+  }
+
+  requestDefensa(){    
+
+  }
+
+  requestEncantamientos(){    
+
+  }
+
+  requestHistoria(){    
+
+  }
+
+  requestQuidditch(){
+
+  }
+  
+  requestCriaturas(){   
+
+  }
+  
+  requestAritmancia(){   
+
+  }
+  
+  requestAdivinacion(){    
+    
+  }
 
 }
