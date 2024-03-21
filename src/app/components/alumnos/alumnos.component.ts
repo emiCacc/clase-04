@@ -82,7 +82,7 @@ export class AlumnosComponent {
   /* Materias opcionales */
     notasQuidditchGriffindor = [
       '10 - Aprobo',
-      '10 - Aprobo',
+      'No cursa',
       '8 - Aprobo',
       'No cursa',
       '10 - Aprobo',
@@ -353,18 +353,117 @@ export class AlumnosComponent {
       '7 - Aprobo'
     ];
 
-
-  alumnosRavenclaw = [
-    'Luna Lovegood',
-    'Cho Chang',
-    'Padma Patil',
-    'Terry Boot',
-    'Michael Corner',
-    'Anthony Goldstein',
-    'Roger Davies',
-    'Marietta Edgecombe',
-    'Penelope Clearwater',
-    'Mandy Brocklehurst'];
+/* RAVENCLAW */
+    alumnosRavenclaw = [
+      'Luna Lovegood',
+      'Cho Chang',
+      'Padma Patil',
+      'Terry Boot',
+      'Michael Corner',
+      'Anthony Goldstein',
+      'Roger Davies',
+      'Marietta Edgecombe',
+      'Penelope Clearwater',
+      'Mandy Brocklehurst'
+    ];
+/* Materias obligatorias */
+    notasPocionesRavenclaw = [
+      '10 - Aprobo',
+      '5 - Desaprobo',
+      'No cursa',
+      '10 - Aprobo',
+      '6 - Aprobo',
+      'No cursa',
+      '5 - Desaprobo',
+      '6 - Aprobo',
+      '9 - Aprobo',
+      'No cursa'
+    ];
+    notasDefensaRavenclaw = [
+      '10 - Aprobo',
+      '4 - Desaprobo',
+      '10 - Aprobo',
+      '5 - Desaprobo',
+      '9 - Aprobo',
+      '9 - Aprobo',
+      '9 - Aprobo',
+      '3 - Desaprobo',
+      '7 - Aprobo',
+      '3 - Desaprobo'
+    ];
+    notasEncantamientosRavenclaw = [
+      '10 - Aprobo',
+      '9 - Aprobo',
+      '4 - Desaprobo',
+      '9 - Aprobo',
+      '4 - Desaprobo',
+      '7 - Aprobo',
+      '5 - Desaprobo',
+      '6 - Aprobo',
+      '7 - Aprobo',
+      '2 - Desaprobo',
+    ];
+    notasHistoriaRavenclaw = [
+      '10 - Aprobo',
+      '8 - Aprobo',
+      '5 - Desaprobo',
+      '7 - Aprobo',
+      '10 - Aprobo',
+      '4 - Desaprobo',
+      '5 - Desaprobo',
+      '9 - Aprobo',
+      '6 - Aprobo',
+      '9 - Aprobo',
+    ];
+/* Materias opcionales */
+    notasQuidditchRavenclaw = [
+      'No cursa',
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+    ];
+    notasCriaturasRavenclaw = [
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '8 - Aprobo',
+      '7 - Aprobo'
+    ];
+    notasAritmanciaRavenclaw = [
+      '10 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '5 - Desaprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      'No cursa'
+    ];
+    notasAdivinacionRavenclaw = [
+      '10 - Aprobo',
+      '8 - Aprobo',
+      'No cursa',
+      'No cursa',
+      'No cursa',
+      '8 - Aprobo',
+      'No cursa',
+      'No cursa',
+      '7 - Aprobo',
+      'No cursa'
+    ];
 
     hasGriffindor(){
       

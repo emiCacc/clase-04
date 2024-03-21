@@ -6,7 +6,7 @@
     <title>Alumnos de Gryffindor</title>
 </head>
     <body>
-        <div class="grid _housesCointaner">
+        <div class="grid _housesCointaner text-sm">
             <!-- Griffindor -->
             <div *ngIf="hasGriffindor" class="text-center xl:text-left col-12 xl:col-3">
                 <h1 class="text-xl">Alumnos Griffindor</h1>
@@ -58,11 +58,22 @@
                     </ul>      
                 </ng-container>
             </div>
+            <!-- Ravenclaw -->
             <div *ngIf="hasRavenclaw" class="text-center xl:text-left col-12 xl:col-3">
                 <h1 class="text-2xl">Alumnos Ravenclaw</h1> 
-                <ul>
-                    <li *ngFor="let alumno of alumnosRavenclaw">{{ alumno }}</li>
-                </ul>         
+                <ng-container *ngFor="let alumno of alumnosRavenclaw; let i = index">
+                    <ul>
+                        <li>{{ alumno }}</li>
+                        <li *ngIf="pociones" [style.color]="(notasPocionesRavenclaw[i] | notaConColor).color">{{ notasPocionesRavenclaw[i] }}</li>
+                        <li *ngIf="defensa" [style.color]="(notasDefensaRavenclaw[i] | notaConColor).color">{{ notasDefensaRavenclaw[i] }}</li>
+                        <li *ngIf="encantamientos" [style.color]="(notasEncantamientosRavenclaw[i] | notaConColor).color">{{ notasEncantamientosRavenclaw[i] }}</li>
+                        <li *ngIf="historia" [style.color]="(notasHistoriaRavenclaw[i] | notaConColor).color">{{ notasHistoriaRavenclaw[i] }}</li>
+                        <li *ngIf="quidditch" [style.color]="(notasQuidditchRavenclaw[i] | notaConColor).color">{{ notasQuidditchRavenclaw[i] }}</li>
+                        <li *ngIf="criaturas" [style.color]="(notasCriaturasRavenclaw[i] | notaConColor).color">{{ notasCriaturasRavenclaw[i] }}</li>
+                        <li *ngIf="aritmancia" [style.color]="(notasAritmanciaRavenclaw[i] | notaConColor).color">{{ notasAritmanciaRavenclaw[i] }}</li>
+                        <li *ngIf="adivinacion" [style.color]="(notasAdivinacionRavenclaw[i] | notaConColor).color">{{ notasAdivinacionRavenclaw[i] }}</li>
+                    </ul>         
+                </ng-container> 
             </div>
         </div>        
     </body>
