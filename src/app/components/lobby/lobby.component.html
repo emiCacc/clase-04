@@ -9,21 +9,28 @@
     [adivinacion]="adivinacion"    
     >
 </app-alumnos>
-<div class="col-12 text-center">
-    <p-dropdown 
-        optionLabel="label" 
-        [options]="dropdownOptions" 
-        [showClear]="true" 
-        placeholder="Seleccione el tipo de materia" 
-        (onChange)="onDropdownChange($event.value)">
-    </p-dropdown>
-</div>
+
+<!-- Contenedor textos -->
+<div class="col-12 text-center border-solid border-2 border-round-md border-yellow-500 bg-bluegray-900">
+    <p><span *ngIf="!materiaSeleccionada" class="col-12 text-center text-white-alpha-90">Seleccione un tipo de Materia.</span></p>
+    <div class="col-12 text-center">
+        <p-dropdown 
+            optionLabel="label" 
+            [options]="dropdownOptions" 
+            [showClear]="true" 
+            placeholder="Seleccione el tipo de materia" 
+            (onChange)="onDropdownChange($event.value)">
+        </p-dropdown>
+    </div>
+    <p><span *ngIf="materiaSeleccionada === 'obligatorias' && materiaSeleccionada !== null" class="col-12 text-center text-white-alpha-90">Las materias de esta categoría son obligatorias y los alumnos deberán aprobarlas para pasar al siguiente año.</span></p>
+    <p><span *ngIf="materiaSeleccionada === 'opcionales' && materiaSeleccionada !== null" class="col-12 text-center text-white-alpha-90">Las materias de esta categoría son opcionales y los alumnos podrán cursarlas para obtener puntos para sus casas.</span></p>
+    <p><span *ngIf="materiaSeleccionada" class="col-12 text-center text-white-alpha-90">Seleccione una Materia debajo para ver las calificaciones.</span></p>
+
+
 
 <!-- Materias obligatorias -->
 <div *ngIf="materiaSeleccionada === 'obligatorias' && materiaSeleccionada !== null" class="mt-4">
-    <div class="grid">
-        <span class="col-12 text-center">Las materias de esta categoría son obligatorias y los alumnos deberán aprobarlas para pasar al siguiente año.</span>
-        <span class="col-12 text-center">Seleccione una Materia para ver las calificaciones.</span>
+    <div class="grid">        
         <span class="btn-container col-12 xl:col-3 text-center">
             <button class="btn-custom" (click)="requestPociones()" [ngClass]="{ 'btn-selected': pociones }">Pociones</button>
         </span>
@@ -42,8 +49,6 @@
 <!-- Materias opcionales -->
 <div *ngIf="materiaSeleccionada === 'opcionales' && materiaSeleccionada !== null" class="mt-4">
     <div class="grid">
-        <span class="col-12 text-center">Las materias de esta categoría son opcionales y los alumnos podrán cursarlas para obtener puntos para sus casas.</span>
-        <span class="col-12 text-center">Seleccione una Materia para ver las calificaciones.</span>
         <span class="btn-container col-12 xl:col-3 text-center">
             <button class="btn-custom" (click)="requestQuidditch()" [ngClass]="{ 'btn-selected': quidditch }">Quidditch</button>
         </span>
@@ -57,4 +62,5 @@
             <button class="btn-custom" (click)="requestAdivinacion()" [ngClass]="{ 'btn-selected': adivinacion }">Adivinacion</button>
         </span>
     </div>
+</div>
 </div>
