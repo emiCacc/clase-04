@@ -1,3 +1,33 @@
 body{
     background: transparent;
 }
+
+.hasGryffindor {
+    background-image: url("../../../assets/img/logo_gryffindorT.png");
+    background-color: rgba(255, 0, 0, 0.1); 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hasSlytherin {
+    background-image: url("../../../assets/img/logo_slytherinT.png");
+    background-color: rgba(51, 182, 90, 0.1); 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hasHufflepuff {
+    background-image: url("../../../assets/img/logo_hufflepuffT.png");
+    background-color: rgba(245, 241, 2, 0.1); 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.hasRavenclaw {
+    background-image: url("../../../assets/img/logo_ravenclawT.png");
+    background-color: rgba(2, 0, 146, 0.1); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}

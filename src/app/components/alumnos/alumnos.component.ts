@@ -16,9 +16,9 @@ export class AlumnosComponent {
   @Input() aritmancia: boolean = false;
   @Input() adivinacion: boolean = false;
 
-  /* GRIFFINDOR */
+  /* GRYFFINDOR */
   /* Alumnos */
-    alumnosGriffindor = [
+    alumnosGryffindor = [
       'Harry Potter',
       'Hermione Granger',
       'Ron Weasley',
@@ -31,7 +31,7 @@ export class AlumnosComponent {
       'Seamus Finnigan'
     ];
   /* Materias obligatorias */
-    notasPocionesGriffindor = [
+    notasPocionesGryffindor = [
       '6 - Aprobo',
       '10 - Aprobo',
       '6 - Aprobo',
@@ -43,7 +43,7 @@ export class AlumnosComponent {
       '7 - Aprobo',
       '6 - Aprobo'
     ];
-    notasDefensaGriffindor = [
+    notasDefensaGryffindor = [
       '10 - Aprobo',
       '8 - Aprobo',
       '6 - Aprobo',
@@ -55,7 +55,7 @@ export class AlumnosComponent {
       '6 - Aprobo',
       '6 - Aprobo'
     ];
-    notasEncantamientosGriffindor = [
+    notasEncantamientosGryffindor = [
       '7 - Aprobo',
       '10 - Aprobo',
       '6 - Aprobo',
@@ -67,7 +67,7 @@ export class AlumnosComponent {
       '6 - Aprobo',
       '8 - Aprobo'
     ];
-    notasHistoriaGriffindor = [
+    notasHistoriaGryffindor = [
       '6 - Aprobo',
       '10 - Aprobo',
       '6 - Aprobo',
@@ -80,7 +80,7 @@ export class AlumnosComponent {
       '6 - Aprobo'
     ];
   /* Materias opcionales */
-    notasQuidditchGriffindor = [
+    notasQuidditchGryffindor = [
       '10 - Aprobo',
       'No cursa',
       '8 - Aprobo',
@@ -92,7 +92,7 @@ export class AlumnosComponent {
       'No cursa',
       '9 - Aprobo'
     ];
-    notasCriaturasGriffindor = [
+    notasCriaturasGryffindor = [
       'No cursa',
       '10 - Aprobo',
       '6 - Aprobo',
@@ -104,7 +104,7 @@ export class AlumnosComponent {
       'No cursa',
       'No cursa'
     ];
-    notasAritmanciaGriffindor = [
+    notasAritmanciaGryffindor = [
       'No cursa',
       'No cursa',
       '6 - Aprobo',
@@ -116,7 +116,7 @@ export class AlumnosComponent {
       'No cursa',
       'No cursa'
     ];
-    notasAdivinacionGriffindor = [
+    notasAdivinacionGryffindor = [
       'No cursa',
       'No cursa',
       '5 - Desaprobo',
@@ -465,7 +465,7 @@ export class AlumnosComponent {
       'No cursa'
     ];
 
-    hasGriffindor(){
+    hasGryffindor(){
       
     }
     
