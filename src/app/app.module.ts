@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Importa BrowserAnimationsModule
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
 import { CommonModule } from '@angular/common';
@@ -16,6 +16,8 @@ import { TranslatePipe } from './pipes/translate.pipe';
 import { TranslationService } from './services/translation.service';
 import { HttpClientModule } from '@angular/common/http';
 import { TooltipModule } from 'primeng/tooltip';
+import { DynamicDialogModule } from 'primeng/dynamicdialog';
+import { ListboxModule } from 'primeng/listbox';
 
 @NgModule({
   declarations: [
@@ -35,9 +37,12 @@ import { TooltipModule } from 'primeng/tooltip';
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    TooltipModule
+    TooltipModule,
+    DynamicDialogModule,
+    ListboxModule
   ],
   providers: [TranslationService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [ListboxModule]
 })
 export class AppModule { }

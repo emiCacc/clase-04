@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { TranslationService } from 'src/app/services/translation.service';
-
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { SearchWizardComponent } from 'src/app/modals/search-wizard/search-wizard.component';
 @Component({
   selector: 'app-lobby',
   templateUrl: './lobby.component.html',
-  styleUrls: ['./lobby.component.scss']
+  styleUrls: ['./lobby.component.scss'],
+  providers: [DialogService]
 })
 
 export class LobbyComponent {
@@ -25,7 +27,11 @@ export class LobbyComponent {
     { label: 'Materias opcionales', value: 'opcionales' }
   ];
 
-  constructor(public translationService: TranslationService) { }
+  ref: DynamicDialogRef | undefined;
+
+  constructor(public translationService: TranslationService,
+              public dialogService: DialogService
+  ) { }
 
   onDropdownChange(event: any) {
     this.materiaSeleccionada = event.value;
@@ -89,5 +95,16 @@ export class LobbyComponent {
     console.log("click adivinacion")
     this.resetButtons();  
     this.adivinacion = true;
+  }
+
+  openWizardModal(){
+    this.ref = this.dialogService.open(SearchWizardComponent, {
+      header: 'Wizard Search',
+      width: '90rem',
+      data: { },
+      dismissableMask: true,
+      draggable: true,
+      keepInViewport: true
+  });
   }
 }

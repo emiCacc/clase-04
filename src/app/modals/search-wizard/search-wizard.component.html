@@ -1,0 +1,166 @@
+<form class="mt-2">
+    <div class="grid">
+        <div class="col-12 xl:col-6 xl:mt-2">
+            <!-- Wizard Name -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Nombre del mago: </label>
+                <input 
+                    class="col-6 mx-1 form__input-field-style w-6"  
+                    type="text"  
+                    name="ownerName" 
+                    #inputOwnerName 
+                    maxlength="80" 
+                    tabindex="1"
+                />
+                <div class="col-3 px-0"></div>
+            </div>                    
+            <!-- Plant Name -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Casa del mago: </label>
+                <input 
+                    class="col-6 mx-1 form__input-field-style w-6"  
+                    type="text"   
+                    name="assetName" 
+                    #inputPlantName
+                    pInputText  
+                    maxlength="80"
+                    tabindex="2" 
+                />
+                <div class="col-3 px-0"></div>
+            </div>
+            <!-- Wizard age -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Edad aproximada: </label>
+                <!-- <div class="col-6 px-1">
+                    <p-listbox 
+                        [options]="cities" 
+                        [(ngModel)]="selectedCity" 
+                        optionLabel="name" 
+                        [style]="{'width':'15rem'}" 
+                        [listStyle]="{'max-height': '220px'}"
+                        [tabindex]="3">
+                    </p-listbox>
+                </div> -->
+                <input 
+                    class="col-6 mx-1 form__input-field-style w-6"
+                    type="text"   
+                    name="assetName" 
+                    #inputPlantName
+                    pInputText  
+                    maxlength="80"
+                    tabindex="2" 
+                />
+                <div class="col-3 px-0"></div>
+            </div>
+            <!-- SIC Code -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Ver hechizos</label>
+                <input 
+                    class="col-6 mx-1 form__input-field-style w-6 disabled-sic-code" 
+                    type="text" 
+                    name="sicCodeToShow" 
+                    maxlength="80"
+                    tabindex="5"
+                    placeholder="Buscar un hechizo del mago"/>
+                <div class="col-3 px-0 ml-1">
+                    <button 
+                        pButton 
+                        pRipple 
+                        type="button" 
+                        icon="pi pi-search"
+                        class="w-auto h-2rem border-round-md text-base"
+                        tabindex="6"
+                        (click)="openSpellLookUp()">Buscar hechizo
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 xl:col-6 xl:mt-2">
+            <!-- Wizard Name -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Nombre del mago: </label>
+                <input 
+                    class="col-6 mx-1 form__input-field-style w-6"  
+                    type="text"  
+                    name="ownerName" 
+                    #inputOwnerName 
+                    maxlength="80" 
+                    tabindex="1"
+                />
+                <div class="col-3 px-0"></div>
+            </div>                    
+            <!-- Wizard house -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Casa del mago: </label>
+                <input 
+                    class="col-6 mx-1 form__input-field-style w-6"  
+                    type="text"   
+                    name="assetName" 
+                    #inputPlantName
+                    pInputText  
+                    maxlength="80"
+                    tabindex="2" 
+                />
+                <div class="col-3 px-0"></div>
+            </div>
+            <!-- Wizard age -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Edad aproximada: </label>
+                <!-- <div class="col-6 px-1">
+                    <p-listbox 
+                        [options]="cities" 
+                        [(ngModel)]="selectedCity" 
+                        optionLabel="name" 
+                        [style]="{'width':'15rem'}" 
+                        [listStyle]="{'max-height': '220px'}"
+                        [tabindex]="3">
+                    </p-listbox>
+                </div> -->
+                <input 
+                    class="col-6 mx-1 form__input-field-style w-6"
+                    type="text"   
+                    name="assetName" 
+                    #inputPlantName
+                    pInputText  
+                    maxlength="80"
+                    tabindex="2" 
+                />
+                <div class="col-3 px-0"></div>
+            </div>
+            <!-- SIC Code -->
+            <div class="flex pt-2 align-items-center">
+                <label class="col-3 flex justify-content-end px-0 font-bold text-base mt-1">Botón al p2 -></label>
+                <div class="col-3 px-0 ml-1">
+                    <button 
+                        pButton 
+                        pRipple 
+                        type="button" 
+                        icon="pi pi-search"
+                        class="h-2rem border-round-md background text-base"
+                        tabindex="6"
+                        (click)="botonAlp2()">Botón al p2
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Confirm/Cancel Buttons -->
+        <div class="col-12 xl:mt-2 text-center">
+            <button                         
+                pButton 
+                pRipple 
+                type="button" 
+                icon="pi pi-search"
+                class="w-auto h-2rem border-round-md text-base"
+                tabindex="6">Aceptar
+            </button>
+            <button
+                pButton 
+                pRipple 
+                type="button" 
+                icon="pi pi-search"
+                class="w-auto h-2rem border-round-md text-base ml-2"
+                tabindex="6"
+                (click)="closeModal()">Cancelar</button>
+        </div>
+    </div>
+</form>  
