@@ -99,7 +99,7 @@ export class LobbyComponent {
 
   openWizardModal(){
     this.ref = this.dialogService.open(SearchWizardComponent, {
-      header: 'Wizard Search (Nivel 2, simil Plant Search)',
+      header: 'Wizard Search (Nivel 2, simil Search Plant)',
       width: '90rem',
       data: { },
       dismissableMask: true,

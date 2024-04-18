@@ -10,8 +10,9 @@
             <div class="hasGryffindor text-center xl:text-left col-12 xl:col-3 border-solid border-2 border-round-md border-yellow-500 p-5">
                 <h1 class="text-xl text-center">{{ translationService.translate('alumnosGryffindor') }}</h1>
                 <ng-container *ngFor="let alumno of alumnosGryffindor; let i = index">
-                    <span class="text-center">
-                        <p>{{ alumno }}
+                    <span class="text-center"> 
+                        <p class="text-base"> ~Desabilitado por la prueba de tabindex~
+                            <!-- {{ alumno }}
                             <span *ngIf="pociones" [ngClass]="(notasPocionesGryffindor[i] | notaConColor).clase">{{ notasPocionesGryffindor[i] }}</span>
                             <span *ngIf="defensa" [ngClass]="(notasDefensaGryffindor[i] | notaConColor).clase">{{ notasDefensaGryffindor[i] }}</span>
                             <span *ngIf="encantamientos" [ngClass]="(notasEncantamientosGryffindor[i] | notaConColor).clase">{{ notasEncantamientosGryffindor[i] }}</span>
@@ -19,7 +20,7 @@
                             <span *ngIf="quidditch" [ngClass]="(notasQuidditchGryffindor[i] | notaConColor).clase">{{ notasQuidditchGryffindor[i] }}</span>
                             <span *ngIf="criaturas" [ngClass]="(notasCriaturasGryffindor[i] | notaConColor).clase">{{ notasCriaturasGryffindor[i] }}</span>
                             <span *ngIf="aritmancia" [ngClass]="(notasAritmanciaGryffindor[i] | notaConColor).clase">{{ notasAritmanciaGryffindor[i] }}</span>
-                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionGryffindor[i] | notaConColor).clase">{{ notasAdivinacionGryffindor[i] }}</span>
+                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionGryffindor[i] | notaConColor).clase">{{ notasAdivinacionGryffindor[i] }}</span> -->
                         </p>
                     </span>
                 </ng-container>
@@ -29,7 +30,8 @@
                 <h1 class="text-xl text-center">{{ translationService.translate('alumnosSlytherin') }}</h1> 
                 <ng-container *ngFor="let alumno of alumnosSlytherin; let i = index">
                     <span class="text-center">
-                        <p>{{ alumno }} 
+                        <p class="text-base"> ~Desabilitado por la prueba de tabindex~
+                            <!-- {{ alumno }} 
                             <span *ngIf="pociones" [ngClass]="(notasPocionesSlytherin[i] | notaConColor).clase">{{ notasPocionesSlytherin[i] }}</span>
                             <span *ngIf="defensa" [ngClass]="(notasDefensaSlytherin[i] | notaConColor).clase">{{ notasDefensaSlytherin[i] }}</span>
                             <span *ngIf="encantamientos" [ngClass]="(notasEncantamientosSlytherin[i] | notaConColor).clase">{{ notasEncantamientosSlytherin[i] }}</span>
@@ -37,7 +39,7 @@
                             <span *ngIf="quidditch" [ngClass]="(notasQuidditchSlytherin[i] | notaConColor).clase">{{ notasQuidditchSlytherin[i] }}</span>
                             <span *ngIf="criaturas" [ngClass]="(notasCriaturasSlytherin[i] | notaConColor).clase">{{ notasCriaturasSlytherin[i] }}</span>
                             <span *ngIf="aritmancia" [ngClass]="(notasAritmanciaSlytherin[i] | notaConColor).clase">{{ notasAritmanciaSlytherin[i] }}</span>
-                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionSlytherin[i] | notaConColor).clase">{{ notasAdivinacionSlytherin[i] }}</span>
+                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionSlytherin[i] | notaConColor).clase">{{ notasAdivinacionSlytherin[i] }}</span> -->
                         </p>
                     </span>
                 </ng-container>
@@ -47,7 +49,8 @@
                 <h1 class="text-xl text-center">{{ translationService.translate('alumnosHufflepuff') }}</h1> 
                 <ng-container *ngFor="let alumno of alumnosHufflepuff; let i = index">
                     <span class="text-center">
-                        <p>{{ alumno }}
+                        <p class="text-base"> ~Desabilitado por la prueba de tabindex~
+                            <!-- {{ alumno }}
                             <span *ngIf="pociones" [ngClass]="(notasPocionesHufflepuff[i] | notaConColor).clase">{{ notasPocionesHufflepuff[i] }}</span>
                             <span *ngIf="defensa" [ngClass]="(notasDefensaHufflepuff[i] | notaConColor).clase">{{ notasDefensaHufflepuff[i] }}</span>
                             <span *ngIf="encantamientos" [ngClass]="(notasEncantamientosHufflepuff[i] | notaConColor).clase">{{ notasEncantamientosHufflepuff[i] }}</span>
@@ -55,7 +58,7 @@
                             <span *ngIf="quidditch" [ngClass]="(notasQuidditchHufflepuff[i] | notaConColor).clase">{{ notasQuidditchHufflepuff[i] }}</span>
                             <span *ngIf="criaturas" [ngClass]="(notasCriaturasHufflepuff[i] | notaConColor).clase">{{ notasCriaturasHufflepuff[i] }}</span>
                             <span *ngIf="aritmancia" [ngClass]="(notasAritmanciaHufflepuff[i] | notaConColor).clase">{{ notasAritmanciaHufflepuff[i] }}</span>
-                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionHufflepuff[i] | notaConColor).clase">{{ notasAdivinacionHufflepuff[i] }}</span>
+                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionHufflepuff[i] | notaConColor).clase">{{ notasAdivinacionHufflepuff[i] }}</span> -->
                         </p>
                     </span>      
                 </ng-container>
@@ -65,7 +68,8 @@
                 <h1 class="text-xl text-center">{{ translationService.translate('alumnosRavenclaw') }}</h1> 
                 <ng-container *ngFor="let alumno of alumnosRavenclaw; let i = index">
                     <span class="text-center">
-                        <p>{{ alumno }}
+                        <p class="text-base"> ~Desabilitado por la prueba de tabindex~
+                            <!-- {{ alumno }}
                             <span *ngIf="pociones" [ngClass]="(notasPocionesRavenclaw[i] | notaConColor).clase">{{ notasPocionesRavenclaw[i] }}</span>
                             <span *ngIf="defensa" [ngClass]="(notasDefensaRavenclaw[i] | notaConColor).clase">{{ notasDefensaRavenclaw[i] }}</span>
                             <span *ngIf="encantamientos" [ngClass]="(notasEncantamientosRavenclaw[i] | notaConColor).clase">{{ notasEncantamientosRavenclaw[i] }}</span>
@@ -73,7 +77,7 @@
                             <span *ngIf="quidditch" [ngClass]="(notasQuidditchRavenclaw[i] | notaConColor).clase">{{ notasQuidditchRavenclaw[i] }}</span>
                             <span *ngIf="criaturas" [ngClass]="(notasCriaturasRavenclaw[i] | notaConColor).clase">{{ notasCriaturasRavenclaw[i] }}</span>
                             <span *ngIf="aritmancia" [ngClass]="(notasAritmanciaRavenclaw[i] | notaConColor).clase">{{ notasAritmanciaRavenclaw[i] }}</span>
-                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionRavenclaw[i] | notaConColor).clase">{{ notasAdivinacionRavenclaw[i] }}</span>
+                            <span *ngIf="adivinacion" [ngClass]="(notasAdivinacionRavenclaw[i] | notaConColor).clase">{{ notasAdivinacionRavenclaw[i] }}</span> -->
                         </p>
                     </span>         
                 </ng-container> 

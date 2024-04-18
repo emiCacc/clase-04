@@ -52,7 +52,7 @@ export class SearchWizardComponent implements AfterViewInit {
 openSpellLookUp(){
     this.ref = this.dialogService.open(SearchSpellComponent, {
       header: 'Spell Search (Nivel 3, simil Sic-Code LookUp)',
-      width: '90rem',
+      width: '70rem',
       data: { },
       dismissableMask: true,
       draggable: true,
