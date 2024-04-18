@@ -21,12 +21,14 @@
             placeholder="Tipos de materia" 
             (onChange)="onDropdownChange($event.value)">
         </p-dropdown>
+        <label class="text-white ml-1">Click aquí -></label> 
         <p-button
             class="pl-2"
             (click)="openWizardModal()"
         >
             Prueba tabIndex en Angular 17.3.5
         </p-button>
+        <label class="text-white ml-1"><- Click aquí</label>            
     </div>
     <p><span *ngIf="materiaSeleccionada === 'obligatorias' && materiaSeleccionada !== null" class="col-12 text-center text-white-alpha-90">{{ translationService.translate('materiaObligatoria') }}</span></p>
     <p><span *ngIf="materiaSeleccionada === 'opcionales' && materiaSeleccionada !== null" class="col-12 text-center text-white-alpha-90">{{ translationService.translate('materiaOpcional') }}</span></p>

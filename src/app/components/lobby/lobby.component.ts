@@ -99,12 +99,13 @@ export class LobbyComponent {
 
   openWizardModal(){
     this.ref = this.dialogService.open(SearchWizardComponent, {
-      header: 'Wizard Search',
+      header: 'Wizard Search (Nivel 2, simil Plant Search)',
       width: '90rem',
       data: { },
       dismissableMask: true,
       draggable: true,
-      keepInViewport: true
-  });
+      keepInViewport: true,
+    });
   }
+  
 }

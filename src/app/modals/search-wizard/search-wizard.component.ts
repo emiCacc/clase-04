@@ -1,16 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SelectItem } from 'primeng/api';
 import { SearchSpellComponent } from '../search-spell/search-spell.component';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import Swal from 'sweetalert2';
 
-
-
 interface City {
   name: string,
   code: string
 }
-
 @Component({
   selector: 'app-search-wizard',
   standalone: true,
@@ -19,7 +16,10 @@ interface City {
   styleUrl: './search-wizard.component.scss'
 })
 
-export class SearchWizardComponent implements OnInit {
+export class SearchWizardComponent implements AfterViewInit {
+  
+  
+  @ViewChild('firstElement', { static: false}) firstElement!:ElementRef;
   //items: SelectItem[];  // Dropdown option
 
   //cities!: City[];     // Listbox option
@@ -28,7 +28,8 @@ export class SearchWizardComponent implements OnInit {
   ref: DynamicDialogRef | undefined;
 
   constructor( public dialogService: DialogService,
-               public activeModal: DynamicDialogRef
+               public activeModal: DynamicDialogRef,
+
    ){
     // this.items = [];
     // for (let i = 0; i < 10000; i++) {
@@ -36,7 +37,8 @@ export class SearchWizardComponent implements OnInit {
     // }
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    console.log(this.firstElement);
     // this.cities = [
     //     { name: 'New York', code: 'NY' },
     //     { name: 'Rome', code: 'RM' },
@@ -44,11 +46,12 @@ export class SearchWizardComponent implements OnInit {
     //     { name: 'Istanbul', code: 'IST' },
     //     { name: 'Paris', code: 'PRS' }
     // ];
+    this.firstElement.nativeElement.focus();
 }
 
 openSpellLookUp(){
     this.ref = this.dialogService.open(SearchSpellComponent, {
-      header: 'Spell Search LookUp',
+      header: 'Spell Search (Nivel 3, simil Sic-Code LookUp)',
       width: '90rem',
       data: { },
       dismissableMask: true,

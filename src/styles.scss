@@ -38,3 +38,13 @@ list-style-type: none;
 .font-harry{
     font-family: 'HARRYP__', sans-serif;
 }
+
+.highlightable {
+    cursor: pointer;
+}
+
+.highlightable:focus,
+.highlightable:active {
+  outline: 2px solid gold;
+  box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.5); 
+}
