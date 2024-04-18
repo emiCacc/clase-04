@@ -12,9 +12,10 @@
 
 <!-- Contenedor textos -->
 <div class="col-12 text-center border-solid border-2 border-round-md border-yellow-500 bg-bluegray-900 xl:mt-6">
-    <p><span *ngIf="!materiaSeleccionada" class="col-12 text-center text-white-alpha-90">{{ translationService.translate('seleccionarMateria') }}</span></p>
+    <p><span *ngIf="!materiaSeleccionada" class="col-12 text-center text-white-alpha-90 hidden">{{ translationService.translate('seleccionarMateria') }}</span></p>
     <div class="col-12 text-center">
         <p-dropdown 
+            [disabled]="true"
             optionLabel="label" 
             [options]="dropdownOptions" 
             [showClear]="true" 
