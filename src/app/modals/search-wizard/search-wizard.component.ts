@@ -64,20 +64,5 @@ closeModal() {
   this.activeModal.close();
 }
 
-botonAlp2(){
-  this.closeModal();
-  Swal.fire({
-    title: "Te dije que este botón está al p2.",
-    width: 650,
-    padding: "1em",    
-    position:'bottom',
-    color: "#716add",
-    background: "#fff url(/images/trees.png)",
-    backdrop: `
-      rgba(0,0,123,0.4)
-      url("../../assets/img/nyan-cat.gif")
-    `,
-  });
-}
-  
+
 }
